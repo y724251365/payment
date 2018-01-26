@@ -1,0 +1,17 @@
+<!-- 2018-01-22 update -->
+<footer class="index-bottom">
+  <ul class="bottom-btns">
+    <li [class]="isCoubuyActive?'backGround': ''">
+      <span class="main-page"></span>
+      <a routerLink="/coubuy" routerLinkActive="act-blue">首页</a>
+    </li>
+    <li [class]="isHistoryActive?'backGround': ''">
+      <span class="history-page"></span>
+      <a routerLink="/history">订单</a>
+    </li>
+    <li [class]="isPersonCenterActive?'backGround': ''">
+      <span class="personcenter-page"></span>
+      <a routerLink="/user">我的</a>
+    </li>
+  </ul>
+</footer>

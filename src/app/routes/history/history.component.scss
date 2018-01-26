@@ -1,0 +1,53 @@
+body{
+    background:#E2F2FF;
+}
+.history-order-title{
+    margin:1.75vh 0;
+    text-align:center;
+    font-size:.46667rem;
+     color:#495057;
+}
+// main部分
+.main-content{
+    width:100%;
+    height:auto;
+    background-color:#E2F2FF;
+}
+.historyList{
+    position:relative;
+    margin:3vh 5vw;
+    width:90vw;
+    height:18vh;
+    background:#F8F9FA;
+    .his-name{
+        position:absolute;
+        top:15%;
+        left:40%;
+        font-size:.40667rem;
+        font-weight:bold;
+        color:#343A40;
+    }
+    .his-amount{
+        position:absolute;
+        top:40%;
+        left:40%;
+        font-size:.46667rem;
+        color:#868E96;
+    }
+    .his-time{
+        position:absolute;
+        top:70%;
+        left:40%;
+        font-size:.33667rem;
+        color:#868E96;
+    }
+    .his-pic{
+        vertical-align: middle;
+        margin: 1vh 0 0 3vw;
+    }
+}
+.clear:after{
+    display:block;
+    content:"";
+    clear:both;
+}

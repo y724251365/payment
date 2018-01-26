@@ -1,0 +1,32 @@
+<div class="detail" *ngIf="detailProduct">
+  <!-- 请求回来的详情数据 -->
+  <p class="detail-title">
+    订单已完成
+    <span>&lt;&lt;</span>
+  </p>
+  <p class="detailOrder">订单信息详情 --></p>
+  <div class="detail-num">
+      <p>订单编号： {{detailProduct.ordernum}}</p>
+      <p class="detail-id">订单ID： {{detailProduct.id}}</p>
+  </div>
+  <div class="detail-time">
+      <p>创建订单时间： {{detailProduct.create_time | date:'yyyy-MM-dd'}}</p>
+      <p>接受订单时间： {{detailProduct.taken_time | date:'yyyy-MM-dd'}}</p>
+      <p>客户到达时间： {{detailProduct.arrive_time | date:'yyyy-MM-dd'}}</p>
+      <p>完成订单时间： {{detailProduct.finish_time | date:'yyyy-MM-dd'}}</p>
+  </div>
+</div>
+<div class="detail-hotel" *ngIf="detailProduct">
+  <p class="detail-hotel-title">酒店信息详情 --></p>
+  <div class="hotel-info">
+      <p>酒店名称： {{detailProduct.b_name}}</p>
+      <p>酒店地址： {{detailProduct.b_addr}}</p>
+      <p>酒店电话： {{detailProduct.b_tel}}</p>
+      <p>房间编号： {{detailProduct.c_name}}</p>
+      <p>房间电话： {{detailProduct.c_tel}}</p>
+      <p>使用者编号： {{detailProduct.b_userid}}</p>
+  </div>
+  <p class="hotel-end">如有疑问，请来电咨询</p>
+</div>
+<!-- 返回上一页 -->
+<button class="btnBack" (click)="toBackPrev()">返回</button>

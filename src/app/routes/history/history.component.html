@@ -1,0 +1,53 @@
+
+<!-- main -->
+<div class="main-content clear">
+<<<<<<< HEAD
+    <p class="history-order-title">历史账单明细</p>
+  <p style="margin-top:1vh;text-align:center; font-size:0.46667rem; color:#495057"
+   *ngIf="historyProduct.length == 0">
+   Loading...
+  </p>
+  <div *ngIf="historyProduct.length > 0">
+    <div class="historyList" *ngFor="let his of historyProduct; let i=index">
+        <div  [routerLink]="['/historyDetail', his.ordernum]">
+          <div class="left-content">
+            <img src={{his.logo}}  class="his-pic" alt="Loading..." width="30%" height="15%">
+          </div>
+          <div class="right-content">
+            <span class="his-name">
+              {{his.name}}
+            </span>
+            <span class="his-amount">￥ {{his.amount}}</span>
+            <span class="his-time">创建时间：{{his.create_time}}</span>
+          </div>
+=======
+  <p class="history-order-title">历史账单明细</p>
+<p style="margin-top:1vh;text-align:center; font-size:0.46667rem; color:#495057"
+ *ngIf="historyProduct.length == 0">
+ Loading...
+</p>
+<div *ngIf="historyProduct.length > 0">
+  <div class="historyList" *ngFor="let his of historyProduct; let i=index">
+      <div  [routerLink]="['/historyDetail', his.ordernum]">
+        <div class="left-content">
+          <img src={{his.logo}}  class="his-pic" alt="Loading..." width="30%" height="15%">
+        </div>
+        <div class="right-content">
+          <span class="his-name">
+            {{his.name}}
+          </span>
+          <span class="his-amount">￥ {{his.amount}}</span>
+          <span class="his-time">创建时间：{{his.create_time}}</span>
+>>>>>>> 3147baaa4d0fd7625bd8b1ce7be837cd2e1c8243
+        </div>
+      </div>
+    </div>
+  </div>
+<<<<<<< HEAD
+<p *ngIf="isOrderBottom" style="margin-bottom:10vh; text-align:center; font-size:.36667rem; color:#495057">没有更多订单可以加载了</p>
+<app-footer></app-footer>
+=======
+</div>
+<p *ngIf="isOrderBottom" style="margin-bottom:10vh; text-align:center; font-size:.36667rem; color:#495057">没有更多订单可以加载了</p>
+<app-footer></app-footer>
+>>>>>>> 3147baaa4d0fd7625bd8b1ce7be837cd2e1c8243

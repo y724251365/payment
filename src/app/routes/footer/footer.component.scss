@@ -1,0 +1,41 @@
+ // 2018-01-22 update
+ .index-bottom .bottom-btns{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    
+    li{
+      float:left;
+      position:relative;
+      width:33.33%;
+      height:8vh;
+      line-height:3.7;
+      background: rgb(250, 250, 250);
+      text-align:center;
+      box-shadow: 0px 0px 5px rgba(54, 146, 249, .3);
+      a{
+        position:absolute;
+        top:30%;
+        left:40%;
+        font-size:.3rem;
+      }
+      span{
+        display:inline-block;
+        width:20px;height:20px;
+        text-align:center;
+      }
+    }
+}
+.main-page{
+    background:url(../../../assets/img/sprites.png) no-repeat -32px 0;
+}
+.history-page{
+    background:url(../../../assets/img/sprites.png) no-repeat -96px 0; 
+}
+.personcenter-page{
+    background:url(../../../assets/img/sprites.png) no-repeat 0 0;
+}
+.index-bottom .bottom-btns .backGround{
+    background:#E2F2FF;
+    box-shadow: none;
+}

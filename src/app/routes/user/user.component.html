@@ -1,0 +1,61 @@
+
+<div class="user-info" *ngIf="user">
+  <p class="info-title">个人信息</p>
+    <div class="pic">
+      <img src="assets/img/counect_1.jpg" alt="Loading..." width="20%" style="padding-left:5vw;">
+      <span class="userid">用户&nbsp;ID:{{user.id}}</span>
+      <br>
+      <span class="username">用户姓名:{{user.name}}</span>
+    </div>
+</div>
+<div class="user-info" *ngIf="user">
+  <p class="info-title lar">详细信息</p>
+  <div class="info2">
+    <p class="info-list">联系方式：{{user.tel}}</p>
+    <p class="info-list">用户性别： {{user.gender == 0?'男':'女'}}</p>
+    <p class="info-list">登录方式：{{user.client == 1? '微信':'支付宝'}}</p>
+    <p class="info-list">创建时间：{{user.create_time}}</p>
+    <p class="info-list">更新时间：{{user.update_time}}</p>
+    <br>
+    <button class="update-info" (click)="isFormHidden()">点击更新个人信息</button>
+  </div>
+</div>
+<!-- 更新 用户信息 -->
+<div class="wrapper" *ngIf="isFormOpen">
+  <p class="form-title">修改个人信息</p>
+  <form [formGroup]="validateForm" #formDir="ngForm"  (ngSubmit)="upload()">
+    <label class="user-inf name-tel">
+      <span class="forms-style">用户名称：</span>
+      <input class="username-usertel" type="text" id="userName" [placeholder]="username" 
+      formControlName="userName" required maxlength="20" [(ngModel)]="formsVail.userName">
+      <span *ngIf="userName.invalid&&(userName.dirty || userName.touched)">
+          <span *ngIf="userName.errors.required"  class="vali-errors">*请输入20位字符以内</span>
+      </span>
+    </label>
+    <br>
+    <label class="user-inf name-tel">
+      <span class="forms-style">联系方式：</span>
+      <input class="username-usertel" type="tel" id="userTel" [placeholder]="userphone" formControlName="userTel"
+       maxlength="11" minlength="8" required [(ngModel)]="formsVail.userTel">
+       <br>
+      <span *ngIf="userTel.invalid&&(userTel.dirty || userTel.touched)">
+        <span *ngIf="userTel.errors.required" class="vali-errors">请输入8-11位有效号码</span>
+      </span>
+    </label>
+    <br>
+    <label class="user-inf">
+      <span class="forms-style">用户性别：</span>
+      <input type="radio" name="userSex" id="userSex" formControlName="userSex" 
+      value="0" [checked]="true" [(ngModel)]="formsVail.userSex">&nbsp;男
+      <input type="radio" name="userSex" formControlName="userSex"
+       value="1" [(ngModel)]="formsVail.userSex">&nbsp;女
+    </label>
+      <button class="form-btn" [disabled]="validateForm.invalid">提交</button>
+  </form>
+  <button class="close-btn" (click)="isCloseWindow()">X</button>
+</div>
+<app-footer></app-footer>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3147baaa4d0fd7625bd8b1ce7be837cd2e1c8243

@@ -1,0 +1,132 @@
+*{margin:0;padding:0;}
+.user-info{
+    position:relative;
+    margin-top:3vh;
+    width:100%;
+    background-color:#fff;
+}
+.info-title{
+    margin-top:1.5vh;
+    padding-top:1.5vh;
+    text-align:center;
+    font-size:.6667rem;
+    color:#495057;
+}
+.lar{
+    font-size:.46667rem;
+    color:#868E96;
+}
+.pic{
+    margin:1.5vh 0;
+    color:#868E96;
+}
+.pic img{
+    vertical-align: middle;
+    padding:4vw;
+    
+}
+.userid{
+    position:absolute;
+    top:40%;
+    left:35%;
+    width:70%;
+    height:4vh;
+    line-height:4vh;
+    font-size:.46667rem;
+} 
+.username{
+    position:absolute;
+    top:70%;
+    left:35%;
+    width:70%;
+    height:4vh;
+    line-height:4vh;
+    font-size:.46667rem;
+}
+.info-list{
+    margin:2.5vh 14vw;
+    width:72vw;
+    height:4vh;
+    line-height:4vh;
+    color:#868E96;
+    font-size:.46667rem;
+}
+.update-info{
+    display:block;
+    padding: 3vh 0;
+    width:100%;
+    text-align:center;
+    font-size:.4667rem;
+    color:#868E96;
+    background:#fff;
+}
+.wrapper{
+    position:absolute;
+    top:22%;
+    left:5%;
+    margin-top:2vh;
+    width:90%;// 80%
+    height:60vh;
+    background:#fff;
+    -moz-border-radius: 4%;
+    -webkit-border-radius: 4%;
+    border-radius: 4%;
+    box-shadow: 0px 5px 25px rgba(54, 146, 249, .3);
+    .username-usertel{
+        margin-top:1vh;
+        padding-left:1vw;
+        display:block;
+        width:90%;
+        height:4.5vh;
+        font-size:.4rem;
+        background:#EDFAFA;
+    }
+}
+.form-title{
+    margin-top:3vh;
+    text-align:center;
+    font-size:.58rem;
+    color:#868E96;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+}
+.user-inf{
+    display:block;
+    margin:4vh 10vw;
+    width:80vw;
+    height:3vh;
+    .forms-style{
+        font-size:.48667rem;
+        color:#868E96;
+    }
+    .name-tel{
+        display:block;
+        height:10vh;
+    }
+}
+.form-btn{
+    margin:0 30%;
+    display:inline-block;
+    width:40%;
+    height:6vh;
+    color:#fff;
+    font-size:.46667rem;
+    background:#86B4EA;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+}
+.vali-errors{
+    color:#e4393c;
+    font-size:.36667rem;
+}
+.close-btn{
+    position:absolute;
+    top:5%;
+    left:90%;
+    display:inline-block;
+    color:#868E96;
+    font-size:.55555rem;
+    background:transparent;
+}

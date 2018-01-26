@@ -1,0 +1,99 @@
+@import "../../cui/variable";
+@import "../../cui/btn";
+
+.order {
+  margin-bottom: $m-top;
+  padding: $m-top $m-top $m-top $m-top*2;
+  background: $white;
+  .app {
+    .title {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      color: $gray-700;
+      font-size: .4rem;
+      line-height: 1.5;
+      border-bottom: 1px solid #f8f9fa;
+      overflow: hidden;
+    }
+  }
+  .goods {
+    border-radius: $border-radius;
+    overflow: hidden;
+    li {
+      display: flex;
+      margin: $size-desc 0;
+      background: $gray-100;
+      .img {
+        position: relative;
+        -webkit-flex: none;
+        flex: none;
+        width: 1.733333rem;
+        width: 17.333333vw;
+        height: 1.733333rem;
+        height: 17.333333vw;
+        img {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: $border-radius;
+          border: 1px solid $gray-100;
+
+        }
+      }
+      .detail {
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-grow: 1;
+        flex-direction: column;
+        user-select: none;
+        padding-left: .266667rem;
+        padding-left: 2.666667vw;
+        font-size: $size-desc;
+        color: $gray-600;
+        font-weight: 700;
+        line-height: 2.5;
+        .name {
+          color: $gray-800;
+          font-size: .4rem;
+        }
+        .count {
+          display: flex;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          overflow: hidden;
+          .money {
+            padding-right: $size-desc;
+          }
+        }
+      }
+    }
+    .btn{
+      float: right;
+    }
+    .btn-primary{
+      background: $green;
+      border: 1px solid $green;
+    }
+  }
+}
+
+.back {
+  position: fixed;
+  bottom: 2rem;
+  bottom: 20vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  .btn {
+    box-shadow: 0px 5px 25px rgba(54, 146, 249, .3);
+  }
+}
+

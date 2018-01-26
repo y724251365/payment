@@ -1,0 +1,83 @@
+.detail{
+    width:100vw;
+    background:#fff;
+}
+.detail-title{
+    margin-top:2vh;
+    padding-top:1vh;
+    font-size:0.46667rem;
+    text-align:center;
+}
+.detailOrder{
+    margin:1vh 0 0 4vw;
+    font-size:.30667rem;
+}
+.detail-num{
+    padding:1vh 3vw;
+    width:94vw;
+    height:3vh;
+    p{
+        padding:.3vh 2vw;
+        font-size:.35667rem;
+        font-weight:bold;
+        background:#F8F9FA;
+    }
+    .detail-id{
+        color:#343A40;
+    }
+}
+.detail-time{
+    margin-top:1vh;
+    padding:1vh 3vw;
+    width:94vw;
+    p{
+        padding:.7vh 2vw;
+        font-size:.37667rem;
+        font-weight:bold;
+        background:#F8F9FA;
+    }
+}
+// 2 floor
+.detail-hotel{
+    margin-top:2vh;
+    width:100vw;
+    background:#fff;
+    .detail-hotel-title{
+        margin:1vh 0 0 4vw;
+        padding-top:1vh;
+        font-size:.30667rem;
+    }
+}
+.hotel-info{
+    margin-top:1vh;
+    padding:1vh 3vw;
+    width:94vw;
+    p{
+        padding:.7vh 2vw;
+        font-size:.37667rem;
+        font-weight:bold;
+        background:#F8F9FA;
+    }
+}
+.hotel-end{
+    padding:1vh 0;
+    text-align:center;
+    font-size:.32667rem;
+    color:#3A8AE9;
+}
+// 返回上一页按钮
+.btnBack{
+    display:inline-block;
+    position:absolute;
+    top:80%;
+    left:38%;
+    width:24%;
+    height:5vh;
+    line-height:5vh;
+    color:#fff;
+    font-size:0.4rem;
+    background-color:#3A8AE9;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+}
